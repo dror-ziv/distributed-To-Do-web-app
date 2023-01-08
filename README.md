@@ -68,6 +68,7 @@ The app listens for requests and, when one is received, it:
 
 1. Parses the request
 2. Executes the appropriate function (CRUD operation)
+3. Sends OK/ERROR code back
 
 ## Tradeoffs and Known Flaws and Vulnerabilities
 
