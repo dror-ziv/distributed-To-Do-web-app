@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title> TO-DO List Manager</title>
+	</head>
+	<body>
+		<h1>To-DO List Manager</h1>
+		<h2>Create New Task:</h2>
+		<form method="POST" action="/">
+			<p><label for="task_title">Task Title: </label></p>
+			<input type="text" name="task_title" placeholder="name your task." maxlength="{{max_title}}">
+			<br>
+			<p><label for="task_description">Task description: </label></p>
+			<textarea type="text" name="task_description" rows="4" cols="50" placeholder=" put description here." maxlength="{{ max_desc }}"></textarea>
+			<br><br>
+			<button type="submit" value="update">create new</button>
+			</form>
+			
+		<h2>current tasks:</h2>
+		{% for note in notes %}
+		<h3>{{note.task_title}} - created at {{note.dateadded.replace(microsecond=0)}} -  <a href="/delete/{{note.id}}"> delete task</a></h3>
+		<p>{{note.task_description}}</p>
+		
+		{% endfor %}
+	</body>
+</html>
