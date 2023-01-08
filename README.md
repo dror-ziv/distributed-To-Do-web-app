@@ -3,7 +3,7 @@
 A distributed todo-list service that is able to support multiple instances such that:
 
 - Every instance can provide access to a shared To-Do list
-- Latency is not dependent on the distance between the two instances
+- Latency is not dependent on the distance between the instances
 
 ## Access
 
