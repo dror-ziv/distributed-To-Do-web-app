@@ -19,6 +19,7 @@ To install the necessary dependencies:
 ```sh
 pip install Flask
 pip install SQLAlchemy
+pip install flask-sqlalchemy
 ```
 
 ## Insert Constants at Each Instance
