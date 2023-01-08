@@ -83,7 +83,6 @@ class Server_to_server:
             return 0
         data = "create"
         self.server.send(data.encode())
-        print("len of biggest json is{}".format(len(json_task)))
         self.server.send(json_task.encode())
         response = self.server.recv(2).decode()
         self.server.close()
