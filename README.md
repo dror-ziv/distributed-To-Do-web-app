@@ -81,7 +81,7 @@ I chose event-based synchronization to keep the two instances of the database in
 To retrieve information from the database, I chose to query the database each time. If I expected the instance to handle more traffic, I would have used some kind of caching mechanism.
 
 ### Flaws
-- If not all intances are up, DB would not syncronyze
+- If not all intances are up, DB would not synchronize
 - If two people upload at the exact same time to different instances, the operation will fail, return an error, and reverse itself back.
 - If using more than two instances and multiple people upload at the exact same time, the database may become unsynced.
 - The app currently does not save `\r\n` characters.
