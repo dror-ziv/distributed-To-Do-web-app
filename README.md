@@ -1,6 +1,6 @@
 # distributed-To-Do-web-app
 
-A distributed todo-list service that is able to support two instances such that:
+A distributed todo-list service that is able to support multiple instances such that:
 
 - Every instance can provide access to a shared To-Do list
 - Latency is not dependent on the distance between the two instances
