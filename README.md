@@ -92,6 +92,7 @@ The app is vulnerable to the following attacks:
 
 - SQL injection
 - XSS
+- CSRF
 
 There is also no authentication or input validation in place.
 
